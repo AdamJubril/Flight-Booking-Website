@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Booking</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="icons/css/all.css">
+    <link rel="stylesheet" href="responsive_styles.css">
+    <link rel="stylesheet" href="Roboto/static/Roboto-Light.ttf">
+</head>
+<body>
+    <main>
+
+<!-- HEADER SECTIONS -->
+
+<header>
+    <figure class="logo">
+        <img src="img/Ablah-removebg-preview.png" alt="brand-logo" width="100px" height="100px">
+        <figcaption>AT&T</figcaption>
+    </figure>
+
+    <nav>
+        <ul class="nav-bar">
+
+            <input type="checkbox" id="check">
+            <span class="menu">
+                <div class="list">
+                    <li><i class="fa-solid fa-house"></i><a href="index.html">Home</a></li>
+                    <li><i class="fa-solid fa-address-card"></i><a href="services.html">Services</a></li>
+                    <li><i class="fa-solid fa-earth-americas"></i><a href="booking.html">Booking</a></li>
+                    <li><i class="fa-solid fa-phone"></i><a href="contact.html">Contact</a></li>
+                </div>
+                <label for="check" class="close-menu"><i class="fa-solid fa-times"></i></label>
+            </span>
+            <label for="check" class="open-menu"><i class="fa solid fa-bars"></i></label>
+
+        </ul>
+    </nav>
+</header>
+
+        <!-- HERO SECTION -->
+        <section class="hero-section">
+            <figure></figure>
+            <figure></figure>
+            <figure></figure>
+            <figure></figure>
+            <figure></figure>
+
+            <div class="hero-text">
+                <h1>Your world is <br> worth sharing</h1>
+                <blockquote>
+                    <p>
+                        Find your flight and explore the world <br>
+                        with us. We will take care of the rest ...
+                    </p>
+                </blockquote>
+
+                <div class="learn-more">
+                    <a href="booking.html"><i style="padding: 10px; color: white; font-size: 25px;" class="fa-solid fa-arrow-right"></i></a>
+                    <label>Learn more</label>  
+                </div>
+            </div>
+
+            <div class="search-form">
+                <!-- Search Form -->
+                <form id="searchForm" >
+                    <h3>Search Flights</h3>
+                    <label>From</label>
+                    
+                    <div class="to">
+                        <i style="color: rgba(99, 209, 9, 0.945); padding: 5px;" class="fa-solid fa-plane-departure"></i>
+                    <select class="from" id="locationFrom" name="location">
+                        <option value="">Select Location</option>
+                        <option value="place">London</option>
+                        <option value="place">Tokyo</option>
+                        <option value="place">New York</option>
+                        <option value="place">Dubai</option>
+                        <option value="place">Lagos</option>
+                    </select>
+                    </div>
+
+                    <label>To</label>
+                    
+                    <div class="to">
+                        <i style="color: rgba(243, 66, 66, 0.884);" class="fa-solid fa-plane-arrival"></i>
+                        <select class="from" id="locationTo">
+                            <option value="">Select Destination</option>
+                            <option value="place">New York</option>
+                            <option value="place">Berlin</option>
+                            <option value="place">Turkey</option>
+                            <option value="place">Qatar</option>
+                            <option value="place">Riyadh</option>
+
+                        </select>
+                    </div>
+
+                    <div class="row">
+                        
+                        <div class="class-seat">
+                           <label for="date">Departure</label>
+                            <input class="calender" name="date" type="date" id="date"> 
+                        </div>
+                    
+                        <div class="class-seat">
+
+                          <label for="class-seat">Class</label>
+                            <select name="class-seat" id="flightSeat">
+                            <option value="">Select Class</option>
+                            <option value="class-seat">First Class</option>
+                            <option value="class-seat"> Business</option>
+                            <option value="class-seat">Premium Economy</option>
+                            <option value="class-seat">Economy</option>
+                            
+                            </select>
+                        </div>
+
+                    </div>
+
+                        <label for="Passenger">Passenger</label>
+                    <div class="person">
+                        
+                        <select name="Passenger" id="passenger">
+                            <option value="">Select Passenger</option>
+                            <option value="Person">1 Adult</option>
+                            <option value="Person">2 Adults</option>
+                            <option value="Person">1 Adult - 2 Children</option>
+                            <option value="Person">2 Adults - 1 Child</option>
+                            <option value="Person">1 Adult 2+ Children</option>
+
+                        </select>
+                    </div>
+
+                    <button type="submit">Book now</button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+        <!-- ABOUT US SECTION -->
+        <section class="about-us">
+
+            <div class="us">
+                <h2>Why Choose Us</h2>
+                <p>Our services are satisfying</p>
+            </div>
+
+            <div class="services">
+
+                <div class="service-box">
+                    <figure class="service-img">
+                        <img src="img/shield.png" alt="security">
+                    </figure>
+                    <span class="label">Best Price Guaranty</span> 
+                    <blockquote>
+                        <p>
+                            
+                            Assuring the best price, everytime you book. <br>
+                            No needd to hunt the best deal's right here!
+                            
+                        </p>
+                    </blockquote>
+                </div>
+
+                <div class="service-box">
+                    <figure class="service-img">
+                        <img src="img/folder1.png" alt="folder">
+                    </figure>
+                    <span class="label">Easy & Quick Booking</span>
+                    <blockquote>
+                        <p>
+                        
+                            Efficient, secure, and lightening-fast <br>
+                            flights reservations. Easy to book. Ready to go.
+                        
+                        </p>
+                    </blockquote>
+                </div>
+
+                <div class="service-box">
+                    <figure class="service-img">
+                        <img src="img/customer.png" alt="customer-care">
+                    </figure>
+                    <span class="label">Customer Care 24/7</span> 
+                    <blockquote>
+                        <p>
+                            
+                            Support that never sleeps. 24/7 Customer-care <br>
+                            We're always here for you.
+                            
+                        </p>
+                    </blockquote>
+                </div>
+
+            </div>
+
+            <div class="let-fly">
+                <div class="pic">
+                    <figure>
+                        <img src="img/dubai.jpg" alt="dubai-tower">
+                    </figure>
+
+                    <figure>
+                        <img src="img/maldive.jpg" alt="maldive">
+                    </figure>
+
+                    <figure>
+                        <img src="img/beach.jpg" alt="beach side">
+                    </figure>
+                </div>
+
+                <div class="pic-text">
+                    
+                        <span class="fly">Let's fly</span>
+                
+                            <p>It's one of the leading online flight <br>
+                                booking platforms in the world.
+                            </p>
+                            
+                                <div class="span-text">
+                                    <span class="check"> <i style="margin-left: 15px; float: left; padding-right: 10px; color: rgb(73, 253, 67);" class="fa-solid fa-square-check"></i> Get your tickets with zero hassle.</span>
+                                    <span class="check"> <i style="margin-left: 15px; float: left; padding-right: 10px; color: rgb(73, 253, 67);" class="fa-solid fa-square-check"></i> Explore flights to over 100+ countries.</span>
+                                    <span class="check"> <i style="margin-left: 15px; float: left; padding-right: 10px; color: rgb(73, 253, 67);" class="fa-solid fa-square-check"></i> Find the lowest fares with our smart team.</span>
+                                    <span class="check"> <i style="margin-left: 15px; float: left; padding-right: 10px; color: rgb(73, 253, 67);" class="fa-solid fa-square-check"></i> Get the best deals by shifting your schedule.</span>
+                                    <span class="check"> <i style="margin-left: 15px; float: left; padding-right: 10px; color: rgb(73, 253, 67);" class="fa-solid fa-square-check"></i> Secure your seat and pay at your convenience.</span>
+                                </div>
+                        <button class="book">Book Now</button>
+                </div>
+            </div>
+        </section>
+
+            <!-- TESTIMONIES FROM CUSTOMERS -->
+        <section class="testimonies">
+            <div class="feedback">
+                <h2>What our customers are saying <br>
+                    about us..
+                </h2>
+                <p>
+                    <blockquote>
+                        "Super easy to book my flight! The whole <br>
+                        process took just few minutes, and i got <br>
+                        my confirmation right away. No stress at all - Loved it!  "
+                    </blockquote>
+                </p>
+
+                <div class="rating">
+                    <div class="likes"> <b>13m+</b> <br>
+                        followers.
+                    </div>
+
+                    <div class="star">
+                        <span><b>4.88%</b></span> 
+                        <span class="rating-stars">
+                            
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="feedback1">
+                    <figure class="customer1">
+                        <img src="img/client.jpg" alt="a client picture">
+                        <figcaption>Micheal Oliver</figcaption>
+                    </figure>
+
+                <p>
+                    <blockquote>
+                        "I was kinda worried at first, but everything <br>
+                        worked out perfectly. Booking was quick,got all the details <br>
+                        in my e-mail, and the flight went great. Thanks!"
+                    </blockquote>
+                </p>
+            </div>
+        </section>
+
+        <!-- TRAVELS OF THE MONTH -->
+        <section class="travels">
+            <h2>Best Travelers Of This Month</h2>
+
+            <div class="locations">
+
+                <div class="place">
+
+                    <figure class="pic">
+                      <img src="img/qubec.jpg" alt="beach-side">  
+                    </figure>
+                    
+                    <figure class="client"> 
+                        <img src="img/client4.jpg" alt="client picture"> 
+                        <figcaption>Solomon Oliver</figcaption>
+                        <span>Qubec</span>
+                    </figure>
+
+                </div>
+
+                <div class="place">
+
+                    <figure class="pic">
+                     <img src="img/monaco.jpg" alt="monaco">   
+                    </figure>
+                    
+                    <figure class="client"> 
+                        <img src="img/client3.jpg" alt="client picture"> 
+                        <figcaption>Rose Lopez</figcaption>
+                        <span>Monaco</span>
+                    </figure>
+
+                </div>
+
+                <div class="place">
+
+                    <figure class="pic">
+                        <img src="img/moscow.jpg" alt="dubai-tower">
+                    </figure>
+                    
+                    <figure class="client"> 
+                        <img src="img/client2.jpg" alt="client picture"> 
+                        <figcaption>Justin Clarke</figcaption>
+                        <span>Moscow</span>
+                    </figure>
+
+                </div>
+
+                <div class="place">
+
+                    <figure class="pic">
+                        <img src="img/dubai-city-tower.jpg" alt="swissland">
+                    </figure>
+                    
+                    <figure class="client"> 
+                        <img src="img/client5.jpg" alt="client picture"> 
+                        <figcaption>Elizabeth Felix</figcaption>
+                        <span>Dubai</span>
+                    </figure>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- NEWSLETTER SECTION -->
+        <section class="newsletter">
+            <div class="content">
+                <h2> Your Free Journey In The Sky Begins Here </h2>
+                <p>Subscribe to see secret deals prices drop the moment you sign up</p>
+                <form class="input-box" id="e-mail">
+                    <input type="email" id="emailAddr" placeholder="Your email address" required>
+                    <button class="subscribe" type="submit" onclick="subscribeBtn()">Subscribe</button>
+                </form>
+            </div>
+
+        </section>
+
+        <!-- FOOTER SECTION -->
+        <footer >
+            <div class="footer-container">
+
+                <div class="links">
+                    <h3>Quick Links</h3>
+                    
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="booking.html">Booking</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                   
+                </div>
+
+                <div class="links">
+                    <h3>Contact Info</h3> 
+                 
+                     <ul class="info">
+                         <li><i style="padding-right: 8px; color: #fb8e27;" class="fa-solid fa-home"></i>Ramat Polytechnic Maiduguri.</li>
+                         <li><i style="padding-right: 8px; color: #fb8e27;" class="fa-solid fa-envelope"></i>at&t@gmail.com</li>
+                         <li><i style="padding-right: 8px; color: #fb8e27;" class="fa-solid fa-phone"></i>+234-81226-93662</li>
+                     </ul>
+                    
+                </div>
+
+                <div class="links">
+                    <h3>Make A Reservation</h3>
+                    <p>
+                        <blockquote>
+                        Our Support & Sales Team is Available 24/7 <br>
+                        To Answer Your Queries.
+                        </blockquote>
+                    </p>
+                    <button> <a href="booking.html">Book Now</a> </button>
+                </div>
+
+            </div>
+
+        </footer>
+    </main>
+    <script src="site.js"></script>
+</body>
+</html>

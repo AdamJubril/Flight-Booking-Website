@@ -1,0 +1,422 @@
+/* SMALLL LAPTOP SCREEN VIEW  */
+
+@media screen and (max-width: 920px) {
+    .hero-section{
+        justify-content: space-evenly;
+    }
+
+    .search-form{
+        width: 30%;
+    }
+
+    .row{
+        flex-direction: column;
+        justify-content: none;
+    }
+
+    .class-seat{
+        width: 100%;
+    }
+
+    /* WHY CHOOSE US SECTION STYLES */
+    .span-text{
+        font-size: 16px;
+    }
+    
+    /* ABOUT-US PAGE STYLINGS BEGINS HERE */
+    .box-container{
+        width: 25%;
+    } 
+    
+    .grid-container .box:nth-child(2){
+        grid-column: span 2;
+    }
+
+    .grid-container .box:nth-child(3){
+        grid-column: span 2;
+    }
+    
+    .grid-container .box:nth-child(4){
+        grid-column: span 2;
+    }
+
+    .grid-container .box:nth-child(5){
+        grid-column: span 2;
+    }
+
+    /* BOOKING PAGE STYLINGS BEGINS HERE */
+    .radio{
+        width: 62%;
+    }
+
+    .reservation-form-container{
+        width: 64%;
+    }
+}
+
+/* TABLET DEVICE */
+
+@media screen and (max-width: 768px) {
+    .logo{
+        flex-direction: column;
+        margin-left: 10px;
+    }
+
+    .logo figcaption{
+        padding-bottom: 10px;
+    }
+    
+    .menu .list{
+        left: 10px;
+        right: 40px;
+    }
+
+    .menu li{
+        margin-right: 8px;
+    }
+
+    .menu .list{
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero-section{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-text{
+        width: 60%;
+        transform: translateY(-10px);
+    }
+
+    .search-form{
+        width: 60%;
+    }
+
+    /* WHY CHOOSE US SECTION STYLES */
+    .service-box{
+        width: 40%;
+    }
+    
+    .services{
+        flex-flow: row wrap;
+        gap: 10px;
+    }
+
+    /* TESTIMONIAL SECTION */
+    .feedback{
+        width: 40%;
+    }
+
+    /*  TRAVELS OF THE MONTH SECTION */
+    .locations{
+        flex-wrap: wrap; 
+    }
+
+    .place{
+        width: 40%;
+    }
+
+    /* NEWSLETTER SECTION STYLES */
+    .content{
+        width: fit-content;
+    }
+        
+    /* ABOUT-US PAGE STYLINGS BEGINS HERE */
+
+    .container{
+        flex-wrap: wrap;
+    }
+
+    .box-container{
+        width: 35%;
+    } 
+
+    /* BOOKING PAGE STYLINGS BEGINS HERE */
+    .reservation-form-container{
+        width: 85%;
+    }
+
+    .destination{
+        flex-wrap: wrap;
+    }
+
+    .place{
+        width: 40%;
+        margin-top: 10px;
+    }
+}
+
+
+/* MOBILE SCREEN VIEW */
+
+@media screen and (max-width: 567px) {
+
+    .menu{
+        flex-direction: column;
+        align-items: center;
+        width: 60%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: #f1f3f8;
+        transition: all .5s ease-in-out;
+    }
+
+    .menu .list{
+        margin-top: 50px;
+        padding-left: 15px;
+        width: 30%;
+        display: inline-block;
+    }
+
+    .menu li{
+        margin-top: 40px;
+        width: fit-content;
+    }
+
+    .menu li a{
+        padding: 0 5px;
+    }
+
+    .open-menu, .close-menu{
+        display: block;
+    }
+
+    #check:checked ~ .menu{
+        right: 0;
+    }
+
+    .logo{
+        flex-direction: row;
+    }
+
+    /* Hover pics on the general styles should be normal */
+
+    .pic{
+        justify-content: space-evenly;
+    }
+
+    .pic figure:hover:nth-child(1){
+        transform: scale(1.0) translate(0px,0);
+        border-color: crimson;
+    }
+    
+    .pic figure:hover:nth-child(2){
+        transform: scale(1.0) translate(0px,0px);
+        border-color: rgb(143, 243, 61);
+    }
+    
+    .pic figure:hover:nth-child(3){
+        transform: scale(1.0) translate(0px,0px);
+        border-color: rgb(40, 114, 224);
+    }
+
+    .hero-text{
+        width: 80%;
+    }
+
+    .search-form{
+        width: 80%;
+    }
+
+    /* WHY CHOOSE US SECTION STYLES */
+    .service-box{
+        width: fit-content;
+    }
+    
+    .services{
+        flex-flow:column wrap;
+        gap: 10px;
+    }
+
+    .let-fly{
+        width: fit-content;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .pic{
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        margin: 1.5rem 0;
+        gap: 4px;
+    }
+
+    .pic figure:nth-child(1){
+        width: 25%;
+        transform: translate(0px,0px);
+    }
+    
+    .pic figure:nth-child(2){
+        width: 35%;
+    }
+    
+    .pic figure:nth-child(3){
+        width: 30%;
+        transform: translate(0px,0px);
+    }
+
+    .pic-text{
+        width: fit-content;
+    } 
+
+    /* TESTIMONIES SECTION */
+    .testimonies{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+
+    }
+
+    .feedback{
+        width: fit-content;
+        margin-bottom: 20px;
+    }
+
+    .feedback1{
+        width: fit-content;
+    }
+
+    /*  TRAVELS OF THE MONTH SECTION */
+    .place{
+        width: 45%;
+    }
+
+    .locations{
+        width: fit-content;
+    }
+
+    /* NEWSLETTER SECTION STYLES */
+    .content{
+        width: 80%;
+    }
+        
+    /* ABOUT-US PAGE STYLINGS BEGINS HERE */
+    .service-hero{
+        min-height: 200px;
+    }
+
+    .content-text h1{
+        font-size: medium;
+    }
+
+    .content-text p{
+        font-size: 12px;
+    }
+
+    .content-text{
+        width: fit-content;
+    }
+
+    .content-text .search{
+        padding: 8px;
+        margin: 10px 0 0 0px;
+    }
+
+    .About-us p{
+        font-size: 12px;
+        padding-top: 10px;
+    }
+
+    .steps h2{
+        padding-left: 5px;
+    }
+
+    .container{
+        flex-direction: column;
+    }
+
+    .box-container{
+        width: 80%;
+        margin: 0 auto;
+    } 
+
+    .grid-container{
+        grid-template-columns: repeat(1,0.5fr);
+    }
+
+    .flight-brands{
+        grid-template-columns: repeat(2, 0.5fr);
+    }
+
+    /* BOOKING PAGE STYLINGS BEGINS HERE */
+    .reservation-form-container{
+        width: 90%; 
+    }
+
+    .Reservation-container h1{
+        word-spacing: 0px;
+    }
+
+    .flying{
+        display: flex;
+        flex-direction: column;  
+    }
+
+    .radio{
+        width: 100%;
+    }
+
+    .flying-cont{
+        width: 100%;
+    }
+
+    .departuring{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .time{
+        width: 100%;
+    }
+
+    .person-details{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .details{
+        width: 100%;
+    }
+
+    .details .option{
+        width: 100%;
+    }
+    
+    /* CONTACT PAGE STYLES BEGINS HERE */
+    .outer-container{
+        width: 80%;
+        margin: 10px auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-text{
+        width: 60%;
+    }
+
+    .contact-form{
+        width: 100%;
+        background-color: white;
+        padding: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .contact-info{
+        width: 100%;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+    }
+
+}
+
+/* DONE WITH RESPONSIVE DESIGN */

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive_styles.css">
+    <link rel="stylesheet" href="icons/css/all.css">
+    <link rel="stylesheet" href="Roboto/static/Roboto-Light.ttf">
+</head>
+<body>
+
+<!-- HEADER SECTION -->
+    <header>
+        <figure class="logo">
+            <img src="img/Ablah-removebg-preview.png" alt="brand-logo" width="100px" height="100px">
+            <figcaption>AT&T</figcaption>
+        </figure>
+    
+        <nav>
+            <ul class="nav-bar">
+    
+                <input type="checkbox" id="check">
+                <span class="menu">
+                    <div class="list">
+                        <li><i class="fa-solid fa-house"></i><a href="index.html">Home</a></li>
+                        <li><i class="fa-solid fa-address-card"></i><a href="services.html">Services</a></li>
+                        <li><i class="fa-solid fa-earth-americas"></i><a href="booking.html">Booking</a></li>
+                        <li><i class="fa-solid fa-phone"></i><a href="contact.html">Contact</a></li>
+                    </div>
+                    <label for="check" class="close-menu"><i class="fa-solid fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fa solid fa-bars"></i></label>
+    
+            </ul>
+        </nav>
+    </header>
+
+    <!-- RESERVATION FORM -->
+
+    <section class="Reservation-container">
+        <h1>Travel Around The World</h1>
+        <h2>FLIGHT RESERVATION</h2>
+
+        <form class="reservation-form-container" id="flightForm">
+            
+            <span class="radio" id="radio-check">
+                <input type="radio" name="checkbox" value="1"  id="flight-trip-1"><label for="flight-trip-1">Round-trip</label>
+                <input type="radio" name="checkbox" value="2" id="flight-trip-2"><label for="flight-trip-2">One-Way  </label>
+                <input type="radio" name="checkbox" value="3" id="flight-trip-3"><label for="flight-trip-3">Multi-City</label>
+            </span>
+            
+            <div class="flying" id="flight-movement">
+
+                <div class="flying-cont">
+                    <label for="departure">FLYING FROM</label>
+                    <input type="text" id="departure" name="departure" placeholder="City or Airport">
+                </div>
+
+                <div class="flying-cont">
+                    <label for="arrival">FLYING TO</label>
+                    <input type="text" id="arrival" name="arrival" placeholder="City or Airport">
+                </div>
+            </div>
+
+            <div class="departuring" id="time">
+
+                <div class="time" >
+                    <label for="departing-time">DEPARTING</label>
+                    <input type="date" id="departing-time" name="departing-time">
+                </div>
+
+                <div class="time">
+                    <label for="arrival-time">RETURNING</label>
+                    <input type="date" id="arrival-time" name="arrival-time">
+                </div>
+            </div>
+
+            <div class="person-details">
+                <div class="details">
+                    <label for="adults">ADULTS(18+)</label>
+                    <input type="number" id="adults" name="adults" placeholder="0">
+                </div>
+
+                <div class="details">
+                    <label for="children">CHILDREN(0-17)</label>
+                    <input type="number" id="children" name="children" placeholder="0">
+                </div>
+
+                <div class="details">
+                    <label for="class">TRAVEL CLASS</label>
+                    <select class="option" name="class" id="flightClass">
+                        <option value="">Class</option>
+                        <option value="flight-seat">First Class</option>
+                        <option value="flight-seat">Business</option>
+                        <option value="flight-seat">Premium Economy</option>
+                        <option value="flight-seat">Economy</option>
+                    </select>
+                </div>
+
+            </div>
+            <button class="book-flight" type="submit">Book Flight</button>
+        </form>
+    </section>
+
+    <!-- DESTINATIONS SECTION -->
+    <section class="destinations-container">
+        <h2>Popular Destinations</h2>
+        <div class="destination">
+
+            <figure class="place">
+                <img src="img/dubai-city-tower.jpg" alt="vacation">
+                <figcaption>Dubai</figcaption>
+            </figure>
+
+            <figure class="place">
+                <img src="img/desert.jpg" alt="vacation">
+                <figcaption>Egypt</figcaption>
+            </figure>
+
+            <figure class="place">
+                <img src="img/paris.jpg" alt="vacation">
+                <figcaption>Paris</figcaption>
+            </figure>
+
+            <figure class="place">
+                <img src="img/beachside1.jpg" alt="vacation">
+                <figcaption>Santorini</figcaption>
+            </figure>
+
+
+        </div>
+    
+
+        <div class="destinations-container">
+            <h2>Top Destinations</h2>
+            <div class="destination">
+
+                <figure class="place">
+                    <img src="img/moscow.jpg" alt="vacation">
+                    <figcaption>Moscow</figcaption>
+                </figure>
+
+                <figure class="place">
+                    <img src="img/swissland.jpg" alt="vacation">
+                    <figcaption>Swissland</figcaption>
+                </figure>
+
+                <figure class="place">
+                    <img src="img/sunset1.jpg" alt="vacation">
+                    <figcaption>Maldives</figcaption>
+                </figure>
+
+                <figure class="place">
+                    <img src="img/qubec.jpg" alt="vacation">
+                    <figcaption>Qubec</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEWSLETTER SECTION -->
+    <section class="newsletter">
+        <div class="content">
+            <h2> Your Free Journey In The Sky Begins Here </h2>
+            <p>Subscribe to see secret deals prices drop the moment you sign up</p>
+            <form class="input-box" id="e-mail">
+                <input type="email" id="emailAddress" placeholder="Your email address" required>
+                <button class="subscribe" type="submit">Subscribe</button>
+            </form>
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER SECTION -->
+    <footer>
+        <div class="footer-container">
+
+            <div class="links">
+                <h3>Quick Links</h3>
+                
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="booking.html">Booking</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+               
+            </div>
+
+            <div class="links">
+               <h3>Contact Info</h3> 
+            
+                <ul class="info">
+                    <li><i style="padding-right: 8px; color: #fb8e27;" class="fa-solid fa-home"></i> Ramat Polytechnic Maiduguri.</li>
+                    <li><i style="padding-right: 8px; color: #fb8e27;" class="fa-solid fa-envelope"></i>at&t@gmail.com</li>
+                    <li><i style="padding-right: 8px; color: #fb8e27;" class="fa-solid fa-phone"></i> +234-81226-93662</li>
+                </ul>
+               
+            </div>
+
+            <div class="links">
+                <h3>Make A Reservation</h3>
+                <p>
+                    Our Support & Sales Team is Available 24/7 <br>
+                    To Answer Your Queries.
+                </p>
+                <button> <a href="booking.html">Book Now</a> </button>
+            </div>
+
+        </div>
+
+    </footer>
+    <script src="site.js"></script>
+</body>
+</html>
